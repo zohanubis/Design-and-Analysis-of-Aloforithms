@@ -4,31 +4,34 @@
 
 void knapsack(int n, float trongLuong[], float giaTri[], float dungTich) {
     float x[20], tp = 0;
-    int i, j, u;
-    u = dungTich;
+    int i, j, v;
+    v = dungTich;
 
     for (i = 0; i < n; i++)
+    {
         x[i] = 0.0;
-
-    for (i = 0; i < n; i++) {
-        if (trongLuong[i] > u)
+    }
+    for (i = 0; i < n; i++)
+    {
+        if (trongLuong[i] > v)
             break;
-        else {
+        else 
+        {
             x[i] = 1.0;
             tp = tp + giaTri[i];
-            u = u - trongLuong[i];
+            v = v - trongLuong[i];
         }
     }
 
     if (i < n)
-        x[i] = u / trongLuong[i];
-
+        x[i] = v / trongLuong[i];
     tp = tp + (x[i] * giaTri[i]);
 
     printf("\nKet qua cua moi vector: ");
     for (i = 0; i < n; i++)
+    {
         printf("%f\t", x[i]);
-
+    }
     printf("\nGiat tri lon nhat cua vat pham:- %f", tp);
 
 }
@@ -42,7 +45,8 @@ int main() {
     scanf("%d", &n);
 
     printf("\nNhap trong luong va gia tri cua moi vat pham : \n");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++) 
+    {
         printf("\nNhap trong luong %d: ", i + 1); scanf("%f", &trongLuong[i]);
         printf("Nhap gia tri %d: ", i + 1); scanf("%f", &giaTri[i]);
     }
