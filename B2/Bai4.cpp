@@ -4,7 +4,7 @@
 void inputArray(int a[], int &n);
 void outputArray(int a[], int n);
 int findIndexMax(int a[], int left, int right);
-void main(){
+int main(){
 	int a[MAXSIZE], n;
 	inputArray(a, n);
 	printf("\n\tArray: ");
