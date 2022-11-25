@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "math.h"
+// Tích số nguyên 
 int max(long a,long b);
 long multiplicationLargeInteger(long a, long b);
 int main(){
