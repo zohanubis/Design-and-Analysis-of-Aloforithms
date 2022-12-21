@@ -52,4 +52,4 @@ void DocFile(Hoatdong list[]){
 	{
 		list[i].time = list[i].TGend - list[i].TGstart;
 	}
-}
+}  e
