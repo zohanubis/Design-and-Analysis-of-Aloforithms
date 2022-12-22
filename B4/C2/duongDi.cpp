@@ -14,7 +14,7 @@ void process() {
 	int u = 1, soCanh = 0;
 	while (chon != 0) {
 		menu();
-		printf("\nChon cau de thuc thi: ");
+		printf("\nLua Chon cua ban: ");
 		scanf("%d", &chon);
 		switch (chon) {
 		case 1:
@@ -34,9 +34,9 @@ void process() {
 }
 
 void menu() {
-    printf("1. Doc File");
-    printf("2. Tinh do dai");
-    printf("3. DFS");
+    printf("\n1. Doc File");
+    printf("\n2. Tinh do dai");
+    printf("\n3. DFS");
 }
 
 void docFile(char fileName[], int& n, dt x[]) {
