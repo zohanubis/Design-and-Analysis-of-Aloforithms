@@ -8,9 +8,8 @@ int gia_tri;
 int Phuong_an;
 };
 typedef Do_vat Danh_sach_vat [MAX]; 
-
-
 typedef int Bang[10][100] ;
+
 void Tao_Bang (Danh_sach_vat ds_vat, int n, int W, Bang F, Bang X)
 {
     int xk, yk, k;
