@@ -1,8 +1,3 @@
-// Using Dynamic Programming for the Balo problem
-// Input :
-// + Backpack Weight, Name Items, Value, Weight
-// n iput from keyboard
-// Read File
 #include "array"
 #include "cassert"
 #include "iostream"
